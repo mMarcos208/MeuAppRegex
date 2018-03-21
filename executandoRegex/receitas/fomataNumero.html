@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type='text' placeholder="0,00" id='inputTexto'>
+    <button onclick="formata()">Feliz</button>
+</body>
+<script type="text/javascript">
+function formata(){
+  var input = document.getElementById('inputTexto');
+  value = input.value;
+
+    input.value = value.replace(/(\d.+,)/, '$100') 
+}
+</script>
+</html>
